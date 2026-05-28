@@ -256,9 +256,9 @@ AI_T2V/
 
 ## Sample Output
 
-```html
+
 <video src="./sample/sample_output.mp4" width="100%" controls autoplay loop></video>
-```
+
 
 ---
 
