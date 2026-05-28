@@ -256,7 +256,7 @@ AI_T2V/
 
 ## Sample Output
 
-(![Sample Video](https://raw.githubusercontent.com/balafromtn/AI-Text-2-Video-Generator/main/sample/sample_output.mp4))
+https://raw.githubusercontent.com/balafromtn/AI-Text-2-Video-Generator/main/sample/sample_output.mp4
 
 ---
 
