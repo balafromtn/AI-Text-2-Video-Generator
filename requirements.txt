@@ -1,0 +1,13 @@
+diffusers
+transformers
+accelerate
+imageio[ffmpeg]
+decord
+gradio
+torch
+torchvision
+spaces
+python-dotenv
+sentencepiece
+tiktoken
+protobuf

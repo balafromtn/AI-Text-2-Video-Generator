@@ -1,0 +1,14 @@
+# Ignore local environment variables
+.env
+
+# Ignore massive AI model weights
+/model/
+
+# Ignore local video renders
+/generated_videos/
+
+# Ingnores .vscode files
+.vscode
+
+#Ignore venv 
+venv/
