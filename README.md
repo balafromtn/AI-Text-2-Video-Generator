@@ -8,19 +8,19 @@ This project is specifically engineered to bring high-end AI video rendering to 
 
 # ⚡ Features
 
-* **Zero-Cloud Dependency**
+* **Zero-Cloud Dependency**:
   Run cinematic AI video generation entirely offline on your local machine.
 
-* **Consumer GPU Optimized**
+* **Consumer GPU Optimized**:
   Pipeline architecture specifically designed for low-VRAM GPUs.
 
-* **Gradio Web Interface**
+* **Gradio Web Interface**:
   Clean and responsive browser-based UI for prompt-to-video generation.
 
-* **Automated Cleanup System**
+* **Automated Cleanup System**:
   Prevents cache overflow and unnecessary storage bloat.
 
-* **Secure Credential Management**
+* **Secure Credential Management**:
   Uses `python-dotenv` to safely manage Hugging Face credentials.
 
 ---
@@ -59,13 +59,10 @@ You **must** configure a **40GB Pagefile** in Windows to prevent CUDA Out-Of-Mem
 # ⚙️ Installation & Setup
 
 ## 1. Clone the Repository
-
 ```bash
 git clone https://github.com/balafromtn/AI-Text-2-Video-Generator.git
 cd ai-video-generator
 ```
-
----
 
 ## 2. Create and Activate a Virtual Environment
 
@@ -79,8 +76,6 @@ python -m venv venv
 venv\Scripts\activate
 ```
 
----
-
 ## 3. Install PyTorch with CUDA Support
 
 Install GPU-enabled PyTorch before other dependencies.
@@ -89,15 +84,11 @@ Install GPU-enabled PyTorch before other dependencies.
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
 ```
 
----
-
 ## 4. Install Project Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
-
----
 
 ## 5. Configure Environment Variables
 
@@ -120,8 +111,6 @@ Start the application:
 python app.py
 ```
 
----
-
 ## First Run
 
 The application will automatically download approximately **13.8GB** of model weights into:
@@ -130,13 +119,10 @@ The application will automatically download approximately **13.8GB** of model we
 ./model
 ```
 
----
-
 ## Subsequent Runs
 
 After the initial download, the application will use locally cached model files for faster startup.
 
----
 
 # 🌐 Access the Interface
 
@@ -146,19 +132,14 @@ Open the following URL in your browser:
 http://127.0.0.1:7860
 ```
 
----
-
 # 🏗️ Architecture & Workflow
 
 This application is designed to pipeline massive AI models through limited hardware resources.
 
----
 
 ## 🔹 Prompt Input
 
 User prompts are received through the Gradio web interface.
-
----
 
 ## 🔹 Tokenization
 
@@ -167,13 +148,9 @@ Input text is processed using:
 * `sentencepiece`
 * `tiktoken`
 
----
-
 ## 🔹 Text Encoding
 
 The T5-XXL text encoder converts prompts into semantic embeddings.
-
----
 
 ## 🔹 Sequential CPU Offloading
 
@@ -188,8 +165,6 @@ Instead of loading the entire 14GB model into VRAM, the pipeline dynamically str
 
 This optimization enables the model to function on low-memory GPUs.
 
----
-
 ## 🔹 Video Generation
 
 The transformer generates:
@@ -199,8 +174,6 @@ The transformer generates:
 * 8 FPS output
 * Average local generation latency: **~7 minutes** *(varies depending on GPU, RAM, and system load)*
 
----
-
 ## 🔹 VAE Decoding
 
 ```python
@@ -209,8 +182,6 @@ enable_tiling()
 ```
 
 Frames are decoded in isolated chunks to prevent VRAM spikes during final rendering.
-
----
 
 ## 🔹 Export
 
@@ -252,13 +223,9 @@ AI_T2V/
 
 > A detailed wooden toy ship with intricately carved masts and sails glides smoothly across a plush blue carpet resembling ocean waves. The ship's rich brown hull contains tiny windows while surrounding toys create a whimsical indoor adventure scene filled with childhood imagination.
 
----
-
 ## Sample Output
 
-https://raw.githubusercontent.com/balafromtn/AI-Text-2-Video-Generator/main/sample/sample_output.mp4
-
----
+https://github.com/user-attachments/assets/a6d7dd57-3541-4bb2-a667-60bae16d15f1
 
 ## User Interface
 
@@ -275,8 +242,6 @@ an ML engineer optimizing inference
 or a Python developer improving stability
 
 feel free to contribute.
-
----
 
 ## Contribution Steps
 
@@ -301,8 +266,6 @@ git push origin feature/AmazingFeature
 ```
 
 5. Open a Pull Request
-
----
 
 ## Contribution Guidelines
 
