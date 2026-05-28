@@ -233,13 +233,13 @@ https://github.com/user-attachments/assets/a6d7dd57-3541-4bb2-a667-60bae16d15f1
 
 ---
 
-# 🤝 Contributing
+# 🤝 Contribution
 
 Whether you're:
 
-a frontend developer improving the UI
-an ML engineer optimizing inference
-or a Python developer improving stability
+* a frontend developer improving the UI
+* an ML engineer optimizing inference
+* or a Python developer improving stability
 
 feel free to contribute.
 
